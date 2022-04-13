@@ -4,12 +4,15 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import {theme} from './theme'
 import RootNavigator from './navigators/RootNavigator';
+import AuthState from './context/auth/AuthState';
 
 const App = () => {
   return (
     <NativeBaseProvider theme={theme}>
       <NavigationContainer>
-        <RootNavigator />
+        <AuthState>
+          <RootNavigator />
+        </AuthState>
       </NavigationContainer>
     </NativeBaseProvider>
   )

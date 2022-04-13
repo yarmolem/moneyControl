@@ -12,7 +12,8 @@ module.exports = {
         'no-undef': 'off',
         semi: 'off',
         'comma-dangle': 'off',
-        'prettier/prettier': 'off'
+        'prettier/prettier': 'off',
+        'react-hooks/exhaustive-deps': 'off'
       }
     }
   ]
